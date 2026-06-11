@@ -33,3 +33,30 @@ let getJohnOrders = () => {
 };
 
 // Start coding here
+function displayJohnProfile(data) {
+  console.log(data);
+}
+
+function displayJohnOrders(data) {
+  console.log(data)
+}
+
+getJohnProfile()
+  .then(displayJohnProfile)
+  .then(getJohnOrders)
+  .then(displayJohnOrders);
+
+/* ผลลัพธ์ที่ควรได้
+{
+  name: "John",
+  age: 20,
+  hobbies: ["Coding", "Football"],
+}
+
+[
+  { orderId: "001",
+    items: ["apple", "banana"] },
+  { orderId: "002",
+    items: ["orange", "itim"] },
+]
+*/

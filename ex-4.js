@@ -13,3 +13,10 @@ let getJohnProfile = () => {
   });
 };
 // Start coding here
+async function asyncFunction(data) { // ชื่อ function เป็นอะไรก็ได้ แต่คิดไม่ออก
+    const displayJohnProfile = await getJohnProfile();
+
+    console.log(displayJohnProfile)
+};
+
+asyncFunction();
