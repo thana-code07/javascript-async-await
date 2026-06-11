@@ -12,4 +12,7 @@ let getJohnProfile = () => {
   });
 };
 
-// Start coding here
+const displayProfile = (data) => console.log(data);
+const displayError = (error) => console.log(error);
+
+getJohnProfile().then(displayProfile).catch(displayError);

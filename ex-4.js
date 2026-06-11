@@ -12,4 +12,10 @@ let getJohnProfile = () => {
     );
   });
 };
-// Start coding here
+
+const asynchronousFunction = async () => {
+  const johnProfileResponse = await getJohnProfile();
+  console.log(johnProfileResponse);
+};
+
+asynchronousFunction();

@@ -32,4 +32,14 @@ let getJohnOrders = () => {
   });
 };
 
-// Start coding here
+const displayProfile = (data) => {
+  console.log("Profile");
+  console.log(data);
+};
+const displayOrders = (data) => {
+  console.log("Orders");
+  console.log(data);
+};
+const displayError =(error) => console.log(error);
+
+getJohnProfile().then(displayProfile).then(getJohnOrders).then(displayOrders).catch(displayError);
